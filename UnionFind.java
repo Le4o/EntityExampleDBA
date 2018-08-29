@@ -8,7 +8,7 @@ public class UnionFind {
 	public int find(int i) {
 		int p = this.nodes[i];
 		if(i==p) {
-			return 1;
+			return i;
 		}
 		return nodes[i] = find(p);
 	}
